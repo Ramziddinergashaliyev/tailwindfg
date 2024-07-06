@@ -1,0 +1,50 @@
+.products {
+  margin: 40px 0px;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+  }
+  &__card {
+    box-shadow: 1px 1px 10px #aaa2;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px;
+    p {
+      color: white;
+      font-family: Playfair Display;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 23.99px;
+      text-align: left;
+      display: -webkit-box;
+      line-clamp: 1;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+    }
+  }
+
+  &__card__img {
+    background-color: #191b1c;
+    width: 100%;
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    font-family: Playfair Display;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 47.99px;
+    text-align: center;
+    color: white;
+    padding: 20px 0px;
+  }
+}

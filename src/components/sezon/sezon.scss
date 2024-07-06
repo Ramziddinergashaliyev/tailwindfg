@@ -1,0 +1,85 @@
+.sezon {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    align-items: center;
+  }
+
+  &__left {
+    padding: 20px;
+    h3 {
+      font-family: Playfair Display;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 47.99px;
+      text-align: center;
+      color: white;
+      padding: 10px 0px;
+    }
+  }
+
+  &__card {
+    box-shadow: 1px 1px 10px #aaa2;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    p {
+      color: white;
+      font-family: Playfair Display;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 23.99px;
+      text-align: left;
+      display: -webkit-box;
+      line-clamp: 1;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+    }
+  }
+
+  &__card__img {
+    background-color: #191b1c;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    background: url(../../assets/sezon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    h3 {
+      font-family: Playfair Display;
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 47.99px;
+      text-align: center;
+      color: white;
+    }
+
+    button {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 10px 30px;
+      display: block;
+      margin: 20px auto;
+    }
+  }
+}
