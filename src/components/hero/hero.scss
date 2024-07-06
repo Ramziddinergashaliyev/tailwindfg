@@ -1,0 +1,50 @@
+.hero {
+  background: url(../../assets/hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    border: 2px solid white;
+    width: 250px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+      font-family: Post No Bills Jaffna;
+      font-size: 34px;
+      font-weight: 700;
+      text-align: center;
+      color: white;
+      border-bottom: 1px solid white;
+    }
+
+    &__text {
+      font-family: PT Sans;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 28.47px;
+      text-align: center;
+      color: white;
+    }
+  }
+  &__desc {
+    font-family: PT Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    width: 70%;
+    padding-top: 30px;
+  }
+}
